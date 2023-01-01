@@ -1,0 +1,23 @@
+DOG = { # Doggerland
+	flag_definition = {
+		coa = DOG
+		subject_canton = DOG_canton
+		priority = 1
+	}
+	flag_definition = {
+		coa = DOG_republic
+		subject_canton = DOG_canton
+		priority = 50
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = DOG_communist
+		priority = 50
+		subject_canton = DOG_canton
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+}	

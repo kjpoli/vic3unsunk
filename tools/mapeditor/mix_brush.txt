@@ -1,0 +1,26 @@
+﻿MaterialSetter={
+	Samples={
+		Sample={
+			Name="Sample from 4115, 2833"
+			Materials={
+				Material={
+					MaterialId="grasslands_02"
+					Value=115
+				}
+
+				Material={
+					MaterialId="grasslands_01"
+					Value=84
+				}
+
+				Material={
+					MaterialId="grasslands_05"
+					Value=56
+				}
+
+			}
+		}
+
+	}
+}
+
