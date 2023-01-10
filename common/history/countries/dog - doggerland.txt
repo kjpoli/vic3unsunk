@@ -2,7 +2,7 @@
 	c:DOG = {
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_liberal = yes
-
+		add_journal_entry = { type = je_dog_national }
 		ig:ig_petty_bourgeoisie = {
 			add_ruling_interest_group = yes
 		}

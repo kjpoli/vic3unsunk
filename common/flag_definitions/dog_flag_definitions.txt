@@ -1,12 +1,20 @@
-DOG = { # Doggerland
+﻿DOG = { # Doggerland
 	flag_definition = {
 		coa = DOG
 		subject_canton = DOG_canton
 		priority = 1
 	}
 	flag_definition = {
+		coa = DOG_dictatorship
+		subject_canton = DOG
+		priority = 50
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
 		coa = DOG_republic
-		subject_canton = DOG_canton
+		subject_canton = DOG
 		priority = 50
 		trigger = { 
 			coa_def_republic_flag_trigger = yes
@@ -14,8 +22,8 @@ DOG = { # Doggerland
 	}	
 	flag_definition = {
 		coa = DOG_communist
-		priority = 50
-		subject_canton = DOG_canton
+		priority = 1500
+		subject_canton = DOG
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
 		}

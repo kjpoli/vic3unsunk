@@ -1,0 +1,57 @@
+﻿STATE_UPPER_DOGGERLAND = {
+    id = 800
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x4942AE" "xEC8C89" "xA2E3E6" "x9D4D37" "x783F07" "x4C065D" "xB4107B" "xB8D2D7" "xD90797" }
+    city = "x9D4D37"
+    port = "xB8D2D7"
+    farm = "xA2E3E6"
+    mine = "xD90797"
+    wood = "x783F07"
+    arable_land = 79
+    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_wheat_farms" }
+    capped_resources = {
+        bg_iron_mining = 35
+        bg_gold_mining = 2
+        bg_logging = 17
+        bg_fishing = 20
+    }
+    naval_exit_id = 3027
+}
+STATE_LOWER_DOGGERLAND = {
+    id = 801
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xC46715" "x53591C" "x1BBD1E" "x362BCE" "xA34948" "x94BF9E" "xB4C754" "xE998DC" "xA790B0" }
+    city = "xA790B0"
+    port = "x94BF9E"
+    farm = "xA790B0"
+    mine = "x362BCE"
+    wood = "x1BBD1E"
+    arable_land = 46
+    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_wheat_farms" }
+    capped_resources = {
+        bg_coal_mining = 60
+        bg_iron_mining = 30
+        bg_sulfur_mining = 40
+        bg_logging = 8
+        bg_fishing = 20
+    }
+    naval_exit_id = 3027
+}
+STATE_DOGGER_ISLES = {
+    id = 802
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x5ED255" "x60AF01" "x4F9842" "xFA9679" }
+    city = "x60AF01"
+    port = "x94BF9E"
+    farm = "x60AF01"
+    mine = "x60AF01"
+    wood = "x60AF01"
+    arable_land = 30
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_logging = 8
+        bg_fishing = 30
+        bg_sulfur_mining = 40
+    }
+    naval_exit_id = 3027
+}

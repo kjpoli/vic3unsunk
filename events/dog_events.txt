@@ -1,0 +1,207 @@
+﻿namespace = doggerland
+#brit compromise
+doggerland.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = doggerland.1.t
+	desc = doggerland.1.d
+	flavor = doggerland.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	trigger = {
+		# triggered by je_national_question completion
+	}
+
+	immediate = {
+
+	}
+
+	option = { # british compromise
+		name = doggerland.1.a
+		default_option = yes
+		change_relations = {
+			country = c:GBR
+			value = 30	
+		}
+	}
+	
+}
+#NET subject
+doggerland.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = doggerland.2.t
+	desc = doggerland.2.d
+	flavor = doggerland.2.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	trigger = {
+		# triggered by je_national_question completion
+	}
+
+	immediate = {
+
+	}
+
+	option = { # Dutch Compromise
+		name = doggerland.2.a
+		default_option = yes
+		change_relations = {
+			country = c:NET
+			value = 30	
+		}
+	}
+}
+#shallow ending some other subject
+doggerland.3 = {
+	type = country_event
+	placement = ROOT
+	
+	title = doggerland.3.t
+	desc = doggerland.3.d
+	flavor = doggerland.3.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	trigger = {
+		# triggered by je_national_question completion
+	}
+
+	immediate = {
+
+	}
+
+	option = { # other subject
+		name = doggerland.3.a
+		default_option = yes
+		trigger = {
+
+		}
+		add_modifier = {
+			name = dog_nation_unclear
+			months = long_modifier_time
+		}
+		
+	}
+
+}
+#the good ending independent
+doggerland.4 = {
+	type = country_event
+	placement = ROOT
+	
+	title = doggerland.4.t
+	desc = doggerland.4.d
+	flavor = doggerland.4.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	trigger = {
+		# triggered by je_national_question completion
+	}
+
+	immediate = {
+
+	}
+
+	option = { # other subject
+		name = doggerland.4.a
+		default_option = yes
+		trigger = {
+			DOG = {
+				is_subject = yes
+				NOT = {
+					is_subject_of = c:GBR
+				}
+				NOT = {
+					is_subject_of = c:NET
+				}
+			}
+		}
+		add_modifier = {
+			name = dog_nation_unclear
+			months = long_modifier_time
+		}
+		
+	}
+
+}
+# secret societies
+doggerland.5 = {
+	type = country_event
+	placement = scope:secret_societies_state
+	
+	title = doggerland.5.t
+	desc = doggerland.5.d
+	flavor = doggerland.5.f
+	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_police_breaking_door.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/police_breaking_door"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+	option = { # the good ending
+		name = doggerland.5.a
+		default_option = yes
+		trigger = {
+			DOG = {
+				is_subject = no
+			}
+		}
+		add_modifier = {
+			name = dog_nation_realized
+			months = long_modifier_time
+		}
+		
+	}
+
+}
+

@@ -3790,7 +3790,7 @@ SCH = {
 
 #Doggerland 
 DOG = {
-	color = {235  89  3 }
+	color = {235  30  3 }
 	
 	country_type = recognized
 

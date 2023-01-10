@@ -1,0 +1,84 @@
+﻿je_dog_national = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		OR = {
+			is_subject = yes
+			AND = {
+				country_rank >= rank_value:major_power
+				is_subject = no
+			}
+		}
+
+	}
+	immediate = {
+		set_variable = {
+			name = nation_timeout
+			value = 0
+		}
+	}
+	on_complete = {
+		if = {
+			c:DOG = {
+				is_subject = no
+			}
+			trigger_event = {
+				id = doggerland.4
+			}			
+		}
+		if = {
+			c:DOG = {
+				is_subject_of = c:GBR
+			}
+			trigger_event = {
+				id = doggerland.1
+			}			
+		}
+		if = {
+			c:DOG = {
+				is_subject_of = c:NET
+			}
+			trigger_event = {
+				id = doggerland.2
+			}			
+		}
+		if = {
+			c:DOG = {
+				is_subject = yes
+				NOT = {
+					is_subject_of = c:GBR
+				}
+				NOT = {
+					is_subject_of = c:NET
+				}
+			}
+			trigger_event = {
+				id = doggerland.3
+			}			
+		}
+
+	}
+
+	on_timeout = {
+		trigger_event = {
+			id = doggerland.5
+		}
+	}
+	current_value = {
+		value = root.var:nation_timeout
+	}
+	invalid = {
+		NOT = {
+			this = c:DOG
+		}
+	}
+
+	goal_add_value = {
+		add = 30
+	}
+	inheritable = no
+	progressbar = yes
+	timeout = 3650
+	weight = 100
+	should_be_pinned_by_default = yes
+}

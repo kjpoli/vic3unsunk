@@ -7217,7 +7217,7 @@ STATES = {
 	s:STATE_DOGGER_ISLES = {
 		create_state = {
 			country = c:DOG
-			owned_provinces = { x5ED255 x60AF01 x4F9842 xFA8679 }
+			owned_provinces = { x5ED255 x60AF01 x4F9842 xFA9679 }
 		}
 		
 		add_homeland = dogger
